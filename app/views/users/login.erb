@@ -7,4 +7,7 @@
 <br>
   <input type="submit" id="submit" value="login">
 </form>
-  
+
+<% if flash.has?(:message) %>
+  <%= erb :'flash_messages/invalid_login' %>
+<% end %>
