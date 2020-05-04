@@ -13,7 +13,7 @@ When you get reviewed understand what everything does, every line of code, every
 
 2. creating controllers and views
     - Signup:
-        - allows new user to signup (signup form will be located on homepage).
+      x - allows new user to signup (signup form will be located on homepage).
         - has form that requires valid username, email, and password.
           else refreshes homepage with new error message inside signup box, "sorry the username or email you have entered in is invalid".
         - sends them to login page.

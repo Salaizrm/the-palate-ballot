@@ -12,5 +12,6 @@ class ApplicationController < Sinatra::Base
   get "/" do
     erb :homepage
   end
+  # include if statement that checks if user is logged in, if so redirect to logout.
 
 end
