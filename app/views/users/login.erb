@@ -8,6 +8,8 @@
   <input type="submit" id="submit" value="login">
 </form>
 
-<% if flash.has?(:message) %>
-  <%= erb :'flash_messages/invalid_login' %>
-<% end %>
+<font color="red">
+  <% if flash.has?(:login_error) %>
+    <%= flash[:login_error] %>
+  <% end %>
+</font>

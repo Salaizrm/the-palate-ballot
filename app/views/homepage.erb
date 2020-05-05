@@ -5,6 +5,9 @@
     <p> this should be centered </p>
     <h1> Welcome, this is the homepage </h1>
     <p> This is where the date will go </p>
+    <form method="POST" action="/login">
+      <input type="submit" id="submit" value="login">
+    </form>
   </head>
 
 <body>
@@ -22,5 +25,12 @@
     <input type="submit" id="submit" value="signup">
   </form>
 </body>
+
+<font color="red">
+  <% if flash.has?(:signup_error) %>
+    <%= flash[:signup_error] %>
+  <% end %>
+</font>
+
 
 <h2>Description of website...</h2>
