@@ -1,5 +1,6 @@
 <!DOCTYPEhtml>
 <html>
+
 <title>Homepage</title>
   <head>
     <p> this should be centered </p>
@@ -26,11 +27,12 @@
   </form>
 </body>
 
-<font color="red">
+<mark>
   <% if flash.has?(:signup_error) %>
-    <%= flash[:signup_error] %>
+    <%= flash[:signup_error]%>
   <% end %>
-</font>
+</mark>
 
 
 <h2>Description of website...</h2>
+</html>

@@ -1,15 +1,27 @@
-<form method="POST" action="/login">
-  <label for="username">Username:</label>
-  <input type="text" name="username" id="username">
-<br>
-  <label for="password">Password:</label>
-  <input type="text" name="password" id="password">
-<br>
-  <input type="submit" id="submit" value="login">
-</form>
+<!DOCTYPEhtml>
+<html>
+  <title>Login</title>
 
-<font color="red">
+  <head>
+  </head>
+    <body>
+      <form method="POST" action="/login">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username">
+      <br>
+        <label for="password">Password:</label>
+        <input type="text" name="password" id="password">
+      <br>
+        <input type="submit" id="submit" value="login">
+      </form>
+    </body>
+
   <% if flash.has?(:login_error) %>
     <%= flash[:login_error] %>
+  <br>
+    <form method="POST" action="/">
+      <input type="submit" id="submit" value="signup!">
+    </form>
   <% end %>
-</font>
+
+</html>
