@@ -18,7 +18,7 @@ When you get reviewed understand what everything does, every line of code, every
       x - allows new user to signup (signup form will be located on homepage).
       x - has form that requires valid username, email, and password.
           else refreshes homepage with new error message inside signup box,
-          "sorry the username or email you have entered in is invalid".
+          "sorry the username or email you have entered is already in use". <= THIS STILL NEEDS TO BE ADDED
           OR "Invalid information"
       x - sends them to members homepage.
     - Login

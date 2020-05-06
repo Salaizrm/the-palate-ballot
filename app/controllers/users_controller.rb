@@ -1,8 +1,9 @@
 class UsersController < ApplicationController
 
+#need to add flash error for if someone with same username exists.
   post '/signup' do
     @user = User.create(params)
-  if params[:username] == "" || params[:email] == "" || params[:password] == ""
+  if params[:username] == "" || params[:email] == "" || params[:password] == "" || @user.
     flash[:signup_error] = erb :'flash_messages/invalid_signup'
     redirect to '/'
   else
