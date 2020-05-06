@@ -29,7 +29,7 @@ When you get reviewed understand what everything does, every line of code, every
       x - Confirms "#{user} are you sure you wish to log out?"
       x - Has button that clears users session, logging them out and redirecting them to homepage.
     - Profile
-        - Has users info (name, email, bio and preferences)
+        - Has users info (name, bio and preferences)
         - can edit user info.
         - Has link to all users reviews.
         - can edit/delete any review.

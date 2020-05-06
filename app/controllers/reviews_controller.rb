@@ -5,6 +5,7 @@ class ReviewsController < ApplicationController
       @user = Helpers.current_user(session)
       erb :'reviews/member_homepage'
     else
+      flash[:require_login] = erb :'flash_messages/require_login'
       redirect to '/login'
     end
   end

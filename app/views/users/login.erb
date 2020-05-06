@@ -26,6 +26,11 @@
     </form>
   <% end %>
 
+  <% if flash.has?(:require_login) %>
+    <%= flash[:require_login] %>
+  <% end %>
+
+
 
   <script>
   function myFunction() {

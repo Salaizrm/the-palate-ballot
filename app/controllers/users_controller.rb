@@ -1,9 +1,9 @@
 class UsersController < ApplicationController
 
-#need to add flash error for if someone with same username exists.
+#need to add error for if user tries to create account with an already existing username or email.
   post '/signup' do
     @user = User.create(params)
-  if params[:username] == "" || params[:email] == "" || params[:password] == "" || @user.
+  if params[:username] == "" || params[:email] == "" || params[:password] == ""
     flash[:signup_error] = erb :'flash_messages/invalid_signup'
     redirect to '/'
   else
@@ -45,9 +45,9 @@ class UsersController < ApplicationController
     redirect to '/'
   end
 
-  get '/users/:slug' do
+  get '/profile/:slug' do
     @user = User.find_by(params[:slug])
-    erb :'/users/show'
+    erb :'users/profile'
   end
 
 end
